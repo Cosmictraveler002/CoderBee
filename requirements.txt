@@ -1,0 +1,6 @@
+"fastapi" 
+"faiss-cpu" 
+"sentence-transformers" 
+"watchdog" 
+"flake8" 
+"httpx" 
