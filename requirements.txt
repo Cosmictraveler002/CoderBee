@@ -1,6 +1,11 @@
-"fastapi" 
-"faiss-cpu" 
-"sentence-transformers" 
-"watchdog" 
-"flake8" 
-"httpx" 
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+httpx==0.27.0
+pydantic==2.7.1
+python-multipart==0.0.9
+flake8==7.0.0
+scikit-learn==1.5.0               # For BM25
+sentence-transformers==2.7.0      # For FAISS embeddings
+faiss-cpu==1.8.0                  # For FAISS retrieval
+watchdog==4.0.1                   # Auto-rebuild AST cache
+tiktoken==0.7.0                   # Token counting for sliding window
