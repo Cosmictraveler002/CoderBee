@@ -4,7 +4,7 @@ from datetime import datetime
 
 # The chat request model is what vs code will interact with in forefront. It is the minimum criteria for a chat session to start
 class ChatRequest(BaseModel):
-    message: str = Field(..., min_length=1, description="The current prompt given by the user")
+    prompt: str = Field(..., min_length=1, description="The current prompt given by the user")
     file_path: str | None = Field(None,description="File path of the current file in the code editor")
     session_id: str = Field(..., description="Unique session id of the current chat")
     max_tokens: int = Field(512, ge=1, le=4096, description="Maximum tokens to generate")
